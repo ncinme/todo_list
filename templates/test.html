@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+		/* Assign full width inputs*/
+		input[type=text],
+		input[type=password] {
+			width: 100%;
+			padding: 12px 40px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		/* Set a style for the buttons*/
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		/* Set a hover effect for the button*/
+		button:hover {
+			opacity: 0.8;
+		}
+
+		/* Set extra style for the cancel button*/
+		.container {
+			padding: 16px;
+		}
+
+		.fontuser {
+			position: relative;
+		}
+
+		.fontuser i{
+			position: absolute;
+			left: 15px;
+			top: 40px;
+			color: gray;
+		}
+
+		.fontpassword {
+			position: relative;
+		}
+
+		.fontpassword i{
+			position: absolute;
+			left: 15px;
+			top: 40px;
+			color: gray;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="fontuser">
+			<label><b>Username</b></label>
+			<input type="text"
+					placeholder="Enter Username"
+					name="uname" required>
+            <i class="fa fa-calendar"></i>
+<!--			<i class="fa fa-user fa-lg"></i>-->
+		</div>
+
+		<div class="fontpassword">
+			<label><b>Password</b></label>
+			<input type="password"
+					placeholder="Enter Password"
+					name="psw" required>
+			<i class="fa fa-key fa-lg"></i>
+		</div>
+
+		<button type="submit">Login</button>
+		<input type="checkbox" checked="checked">
+				Remember me
+	</div>
+</body>
+
+</html>
